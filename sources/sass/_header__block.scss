@@ -1,0 +1,38 @@
+.header__block {
+  align-items: center;
+  border-bottom: 1px solid $borderColor;
+  border-top: 1px solid $borderColor;
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 30px 20px 30px;
+}
+
+.header__logo {
+  right: 75px;
+  position: relative;
+  &:hover,
+  &:focus {
+    opacity: .6;
+    outline-color: transparent;
+  }
+  &:active {
+    opacity: .3;
+  }
+}
+
+.btn--burger {
+  background: #fff url(../img/menu.png) no-repeat center center;
+  border: none;
+  color: transparent;
+  font-size: 1px;
+  height: 15px;
+  width: 20px;
+  &:hover,
+  &:focus {
+    opacity: .6;
+    outline-color: transparent;
+  }
+  &:active {
+    opacity: .3;
+  }
+}
