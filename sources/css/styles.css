@@ -53,3 +53,108 @@ body {
     outline-color: transparent; }
   .btn--burger:active {
     opacity: .3; }
+
+.info__block {
+  background: url(../img/hero-mobile.jpg) no-repeat;
+  padding-top: 70px; }
+
+.info__title {
+  font-size: 27px;
+  font-weight: bold;
+  text-align: center; }
+
+.info__options {
+  list-style: none;
+  padding: 105px 0 0 0; }
+
+.info__item {
+  background: #63d1bb url(../img/interior.png) no-repeat 245px center;
+  color: #fff;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 24px;
+  padding: 25px 180px 25px 20px;
+  text-decoration: none; }
+  .info__item:hover, .info__item:focus {
+    background-color: #59d5bc;
+    padding: 25px 180px 30px 20px; }
+  .info__item:active {
+    background: #59d5bc url(../img/interior.-active.png) no-repeat 245px center;
+    color: rgba(255, 255, 255, 0.3); }
+
+.item--2type {
+  background: #56c3b2 url(../img/toy.png) no-repeat 230px center; }
+  .item--2type:hover, .item--2type:focus {
+    background-color: #46c1ae; }
+  .item--2type:active {
+    background: #46c1ae url(../img/toy-active.png) no-repeat 230px center;
+    color: rgba(255, 255, 255, 0.3); }
+
+.tovat__block {
+  padding: 0 20px 35px 20px; }
+
+.tovat__title {
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 30px;
+  padding-top: 5px;
+  margin-bottom: 0; }
+
+.tovat__type {
+  color: #63d1bb;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 20px;
+  text-transform: uppercase; }
+
+.tovat__text {
+  color: #444444;
+  line-height: 24px;
+  padding-bottom: 10px; }
+
+.tovat__info {
+  color: #444444;
+  padding-bottom: 30px;
+  width: 100%; }
+
+.tovat__info td {
+  border-bottom: 1px solid #ececec;
+  padding-bottom: 5px;
+  padding-right: 30px;
+  padding-top: 5px; }
+
+.tovat__price {
+  color: #444444;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 17px;
+  font-weight: bold;
+  -ms-flex-pack: center;
+      justify-content: center;
+  line-height: 24px;
+  padding: 25px 0 25px 0; }
+
+.btn {
+  -ms-flex-align: center;
+      align-items: center;
+  background: inherit;
+  border: 2px solid #444444;
+  color: #444444;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 17px;
+  font-weight: bold;
+  -ms-flex-pack: center;
+      justify-content: center;
+  line-height: 24px;
+  height: 48px;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 256px; }
+  .btn:hover, .btn:focus {
+    background: #444444;
+    color: #fff; }
+  .btn:active {
+    color: rgba(255, 255, 255, 0.3); }

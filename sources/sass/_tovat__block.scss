@@ -1,0 +1,72 @@
+.tovat__block {
+  padding: 0 20px 35px 20px;
+}
+
+.tovat__title {
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 30px;
+  padding-top: 5px;
+  margin-bottom: 0;
+}
+
+.tovat__type {
+  color: $btnColor1;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.tovat__text {
+  color: $textColor;
+  line-height: 24px;
+  padding-bottom: 10px;
+}
+
+.tovat__info {
+  color: $textColor;
+  padding-bottom: 30px;
+  width: 100%;
+}
+
+.tovat__info td {
+  border-bottom: 1px solid $borderColor;
+  padding-bottom: 5px;
+  padding-right: 30px;
+  padding-top: 5px;
+}
+
+.tovat__price {
+  color: $textColor;
+  display: flex;
+  font-size: 17px;
+  font-weight: bold;
+  justify-content: center;
+  line-height: 24px;
+  padding: 25px 0 25px 0;
+}
+
+.btn {
+  align-items: center;
+  background: inherit;
+  border: 2px solid $textColor;
+  color: $textColor;
+  display: flex;
+  font-size: 17px;
+  font-weight: bold;
+  justify-content: center;
+  line-height: 24px;
+  height: 48px;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 256px;
+  &:hover,
+  &:focus {
+    background: $textColor;
+    color: $wh;
+  }
+  &:active {
+    color: $whAct;
+  }
+}

@@ -1,0 +1,47 @@
+.info__block {
+  background: url(../img/hero-mobile.jpg) no-repeat;
+  padding-top: 70px;
+}
+
+.info__title {
+  font-size: 27px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.info__options {
+  list-style: none;
+  padding: 105px 0 0 0;
+}
+
+.info__item {
+  background: $btnColor1 url(../img/interior.png) no-repeat 245px center;
+  color: $wh;
+  display: flex;
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 24px;
+  padding: 25px 180px 25px 20px;
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    background-color: $btnHoverC;
+    padding: 25px 180px 30px 20px;
+  }
+  &:active {
+    background: $btnHoverC url(../img/interior.-active.png) no-repeat 245px center;
+    color: $whAct;
+  }
+}
+
+.item--2type {
+  background: $btnColor2 url(../img/toy.png) no-repeat 230px center;
+  &:hover,
+  &:focus {
+    background-color: $btnHoverC2;
+  }
+  &:active {
+    background: $btnHoverC2 url(../img/toy-active.png) no-repeat 230px center;
+    color: $whAct;
+  }
+}
