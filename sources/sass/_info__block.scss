@@ -21,12 +21,12 @@
   font-size: 19px;
   font-weight: bold;
   line-height: 24px;
-  padding: 25px 180px 25px 20px;
+  padding: 25px 180px 25px 30px;
   text-decoration: none;
   &:hover,
   &:focus {
     background-color: $btnHoverC;
-    padding: 25px 180px 30px 20px;
+    padding: 25px 180px 30px 30px;
   }
   &:active {
     background: $btnHoverC url(../img/interior.-active.png) no-repeat 245px center;

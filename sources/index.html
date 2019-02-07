@@ -11,6 +11,14 @@
     <header class="header__block">
       <a class="header__logo" href="#"><img src="img/logo.png" alt="Логотип" width="85" height="35"></a>
       <button class="btn--burger" type="button" name="button">Меню</button>
+      <div class="menu__block">
+        <ul class="menu__list">
+          <li><a class="list__item" href="#">Каталог товаров</a></li>
+          <li><a class="list__item" href="#">Вязание на заказ</a></li>
+          <li><a class="list__item item--search" href="#">Поиск по сайту</a></li>
+          <li><a class="list__item item--cart" href="#">Корзина: пока пуста</a></li>
+        </ul>
+      </div>
     </header>
     <main>
       <section class="info__block">
@@ -42,40 +50,43 @@
       <section class="about__block">
         <h2 class="about__title">Коротко о нас:</h2>
         <ul class="about__features">
-          <li class="about__item"><img src="img/icon-1.jpg" alt="Экологичность" width="30" height="35"><b>Экологически чистые материалы</b></li>
-          <li class="about__item"><img src="img/icon-3.jpg" alt="Цена" width="45" height="25"><b>Скандинавский стиль по российской цене</b></li>
-          <li class="about__item"><img src="img/icon-5.jpg" alt="Лайки" width="35" height="25"><b>Увеличивает лайки на фотографиях</b></li>
-          <li class="about__item"><img src="img/icon-2.jpg" alt="Ручная работа" width="35" height="35"><b>Связано вручную с любовью и умилением</b></li>
-          <li class="about__item"><img src="img/icon-4.jpg" alt="Отечественный производитель" width="55" height="25"><b>Поддержка отечественного производителя</b></li>
-          <li class="about__item"><img src="img/icon-6.jpg" alt="Подарочная упаковка" width="35" height="30"><b>Поставляется в подарочной упаковке</b></li>
+          <li class="about__item"><img src="img/icon-1.jpg" alt="Экологичность" width="30" height="35"><b class="item__text text--1">Экологически чистые материалы</b></li>
+          <li class="about__item"><img src="img/icon-3.jpg" alt="Цена" width="45" height="25"><b class="item__text">Скандинавский стиль по российской цене</b></li>
+          <li class="about__item"><img src="img/icon-5.jpg" alt="Лайки" width="34" height="27"><b class="item__text text--2">Увеличивает лайки на фотографиях</b></li>
+          <li class="about__item"><img src="img/icon-2.jpg" alt="Ручная работа" width="35" height="35"><b class="item__text">Связано вручную с любовью и умилением</b></li>
+          <li class="about__item"><img src="img/icon-4.jpg" alt="Отечественный производитель" width="55" height="25"><b class="item__text text--4">Поддержка отечественного производителя</b></li>
+          <li class="about__item"><img src="img/icon-6.jpg" alt="Подарочная упаковка" width="35" height="33"><b class="item__text">Поставляется в подарочной упаковке</b></li>
         </ul>
       </section>
-      <section>
-        <h2>Отзывы</h2>
-        <p>Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-        <b>Анастасия Красильникова</b>
-        <span>@misssssiskras</span>
-        <div class="">
-          <button type="button" name="button">Previous</button>
-          <button type="button" name="button">Next</button>
+      <section class="reviews__block">
+        <h2 class="review__title">Отзывы</h2>
+        <p class="review__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+        <b class="review__author">Анастасия Красильникова</b>
+        <span class="review__e-mail">@misssssiskras</span>
+        <div class="review__options">
+          <button class="option btn__previous" type="button" name="button">Previous</button>
+          <button class="option btn__next" type="button" name="button">Next</button>
         </div>
-        <a href="#">Написать</a>
+        <a class="btn" href="#">Написать</a>
       </section>
-      <section>
-        <h3>Контакты</h3>
-        <p>e-mail: <a href="#">info@mimimishkashop.ru</a></p>
-        <p>адрес: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
-        <img src="img/map.jpg" alt="Карта" width="320" height="455">
-        <button type="button" name="button">Напиши нам</button>
+      <section class="contacts__block">
+        <div class="contacts__wrapper">
+          <h3 class="contacts__title">Контакты</h3>
+          <p class="contacts__e-mail">e-mail:   <a class="e-mail__anchor" href="#">info@mimimishkashop.ru</a></p>
+          <span class="contacts__address">адрес:</span>
+          <p class="address__info">г. Санкт-Петербург, ул. Большая Конюшенная,<br> д. 19/8, офис 101<p>
+        </div>
+        <img class="contact__map" src="img/map.jpg" alt="Карта" width="320" height="455">
+        <button class="btn" type="button" name="button">Напиши нам</button>
       </section>
     </main>
-    <footer>
-      <ul>
-        <li><a href="#">Instagram</a></li>
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">Twitter</a></li>
+    <footer class="footer__block">
+      <ul class="footer__social">
+        <li><a class="social__media media--inst" href="#">Instagram</a></li>
+        <li><a class="social__media media--fb" href="#">Facebook</a></li>
+        <li><a class="social__media media--tw" href="#">Twitter</a></li>
       </ul>
-      <a href="#">Разработано <img src="img/htmlacademy.png" alt="htmlacademy" width="25" height="35"></a>
+      <a class="footer__creator" href="#">Разработано <img src="img/htmlacademy.png" alt="htmlacademy" width="25" height="35"></a>
     </footer>
     </div>
   </body>

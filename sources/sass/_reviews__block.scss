@@ -1,0 +1,52 @@
+.reviews__block {
+  padding: 0 30px 40px 30px;
+}
+
+.review__title {
+  font-size: 25px;
+}
+
+.review__text {
+  color: $textColor;
+  width: 250px;
+}
+
+.review__author {
+  font-size: 17px;
+}
+
+.review__e-mail {
+  color: $textColor;
+  font-size: 17px;
+}
+
+.review__options {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0 40px 0;
+}
+
+.option {
+  border: 1px solid $borderColor;
+  color: transparent;
+  font-size: 1px;
+  height: 50px;
+  width: 50%;
+  &:hover,
+  &:focus {
+    opacity: .6;
+    outline-color: transparent;
+  }
+  &:active {
+    opacity: .3;
+  }
+}
+
+.btn__previous {
+  background: url(../img/arrow-left.jpg) no-repeat center center;
+}
+
+.btn__next {
+  background: url(../img/arrow-left.jpg) no-repeat center center;
+  transform: rotate(180deg);
+}

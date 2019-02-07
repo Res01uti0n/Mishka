@@ -24,6 +24,10 @@ $btnHoverC : #59d5bc;
 $btnColor2 : #56c3b2;
 $btnHoverC2 : #46c1ae;
 $whAct : rgba(255, 255, 255, .3);
+$anchorColor : #62d1ba;
+$borderColor2 : #e5e5e5;
+$bl : #000;
+$footerBack : #f1f1f1;
 
 body {
   font-family: 'OpenSans', sans-serif;
@@ -35,6 +39,7 @@ body {
 .container {
   margin-left: auto;
   margin-right: auto;
+  position: relative;
   width: 320px;
 }
 
@@ -42,3 +47,7 @@ body {
 @import 'info__block';
 @import 'tovat__block';
 @import 'about__block';
+@import 'reviews__block';
+@import 'contacts__block';
+@import 'footer__block';
+@import 'menu__block';
