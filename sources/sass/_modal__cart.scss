@@ -1,0 +1,78 @@
+.modal__cart {
+  align-items: center;
+  background: $wh;
+  border-top: 1px solid $borderColor3;
+  box-shadow: 0 5px 10px $blAct;
+  display: flex;
+  flex-direction: column;
+  height: 265px;
+  padding: 30px 30px 45px 30px;
+  position: absolute;
+  top: 1045px;
+  width: 260px;
+}
+
+.modal__overlay {
+  background: $overlayColor;
+  display: none;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.cart__title {
+  font-size: 25px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 0px;
+  width: 145px;
+}
+
+.cart__size {
+  color: $textColor;
+  position: relative;
+  top: 10px;
+}
+
+.cart__sizes {
+  display: flex;
+  list-style: none;
+  padding: 10px 0 15px 0;
+}
+
+.btn__size {
+  background: $wh;
+  border: 2px solid $borderColor;
+  color: $textColor;
+  font-size: 17px;
+  font-weight: bold;
+  height: 48px;
+  line-height: 16px;
+  margin: 3px;
+  width: 78px;
+  &:hover,
+  &:focus {
+    border-color: $borderColor3;
+    outline-color: transparent;
+  }
+  &:active {
+    border-color: $anchorColor;
+  }
+}
+
+.size--active {
+  border-color: $anchorColor;
+}
+
+.btn--cart {
+  background: $btnColor1;
+  border-color: $btnColor1;
+  color: $wh;
+  &:hover,
+  &:focus {
+    background: $btnHoverC2;
+    border-color: $btnHoverC2;
+    outline-color: transparent;
+  }
+}

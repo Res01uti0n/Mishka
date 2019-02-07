@@ -22,6 +22,10 @@ body {
   position: relative;
   width: 320px; }
 
+@media (min-width: 770px) {
+  .container {
+    width: 770px; } }
+
 .header__block {
   -ms-flex-align: center;
       align-items: center;
@@ -33,9 +37,18 @@ body {
       justify-content: flex-end;
   padding: 20px 30px 20px 30px; }
 
+.header--menu {
+  padding: 20px 30px 300px 30px; }
+
 .header__logo {
+  background: url(../img/logo.png) no-repeat center center;
+  display: block;
+  color: transparent;
+  font-size: 1px;
+  height: 35px;
   right: 75px;
-  position: relative; }
+  position: relative;
+  width: 85px; }
   .header__logo:hover, .header__logo:focus {
     opacity: .6;
     outline-color: transparent; }
@@ -54,6 +67,24 @@ body {
     outline-color: transparent; }
   .btn--burger:active {
     opacity: .3; }
+
+.btn--close {
+  background: #fff url(../img/menu-close.png) no-repeat center center;
+  height: 22px;
+  width: 22px; }
+
+@media (min-width: 770px) {
+  .header__block {
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    padding: 20px 50px 20px 50px; }
+  .header__logo {
+    background: url(../img/logo-tablet.png) no-repeat center center;
+    height: 50px;
+    position: static;
+    width: 120px; }
+  .btn--burger {
+    display: none; } }
 
 .info__block {
   background: url(../img/hero-mobile.jpg) no-repeat;
@@ -80,7 +111,8 @@ body {
   text-decoration: none; }
   .info__item:hover, .info__item:focus {
     background-color: #59d5bc;
-    padding: 25px 180px 30px 30px; }
+    padding: 25px 180px 30px 30px;
+    outline-color: transparent; }
   .info__item:active {
     background: #59d5bc url(../img/interior.-active.png) no-repeat 245px center;
     color: rgba(255, 255, 255, 0.3); }
@@ -88,10 +120,15 @@ body {
 .item--2type {
   background: #56c3b2 url(../img/toy.png) no-repeat 230px center; }
   .item--2type:hover, .item--2type:focus {
-    background-color: #46c1ae; }
+    background-color: #46c1ae;
+    outline-color: transparent; }
   .item--2type:active {
     background: #46c1ae url(../img/toy-active.png) no-repeat 230px center;
     color: rgba(255, 255, 255, 0.3); }
+
+@media (min-width: 770px) {
+  .info__block {
+    background: url(../img/hero-desktop.jpg) no-repeat; } }
 
 .tovat__block {
   padding: 0 30px 35px 30px; }
@@ -123,7 +160,7 @@ body {
 .tovat__info td {
   border-bottom: 1px solid #ececec;
   padding-bottom: 5px;
-  padding-right: 30px;
+  padding-right: 25px;
   padding-top: 5px; }
 
 .tovat__price {
@@ -156,7 +193,8 @@ body {
   width: 256px; }
   .btn:hover, .btn:focus {
     background: #444444;
-    color: #fff; }
+    color: #fff;
+    outline-color: transparent; }
   .btn:active {
     color: rgba(255, 255, 255, 0.3); }
 
@@ -325,7 +363,8 @@ body {
 .media--inst {
   background: url(../img/insta.png) no-repeat center center; }
   .media--inst:hover, .media--inst:focus {
-    background: url(../img/insta.-hover.png) no-repeat center center; }
+    background: url(../img/insta.-hover.png) no-repeat center center;
+    outline-color: transparent; }
 
 .media--fb {
   background: url(../img/fb.png) no-repeat center center; }
@@ -338,8 +377,9 @@ body {
     background: url(../img/twitter-hover.png) no-repeat center center; }
 
 .footer__creator {
-  -ms-flex-align: center;
-      align-items: center;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  background: url(../img/htmlacademy.png) no-repeat 100% center;
   color: #000;
   display: -ms-flexbox;
   display: flex;
@@ -347,15 +387,19 @@ body {
   font-weight: bold;
   -ms-flex-pack: justify;
       justify-content: space-between;
+  height: 35px;
   line-height: 18px;
-  padding-top: 10px;
+  padding-top: 15px;
   text-decoration: none;
   width: 180px; }
+  .footer__creator:hover, .footer__creator:focus {
+    background: url(../img/html-hover.png) no-repeat 100% center; }
   .footer__creator:active {
     opacity: .3; }
 
 .menu__block {
   background: #fff;
+  display: none;
   left: 0;
   position: absolute;
   width: 320px;
@@ -385,9 +429,98 @@ body {
   line-height: 24px;
   padding-left: 75px;
   text-decoration: none; }
+  .list__item:hover, .list__item:focus {
+    opacity: .6;
+    outline-color: transparent; }
+  .list__item:active {
+    opacity: .3; }
 
 .item--search {
   background: url(../img/search.png) no-repeat 30px center; }
+  .item--search:hover {
+    background: url(../img/search-hover.png) no-repeat 30px center;
+    color: rgba(0, 0, 0, 0.6);
+    opacity: 1;
+    outline-color: transparent; }
+  .item--search:active {
+    opacity: .3; }
 
 .item--cart {
   background: url(../img/cart.png) no-repeat 30px center; }
+  .item--cart:hover {
+    background: url(../img/cart-hover.png) no-repeat 30px center;
+    color: rgba(0, 0, 0, 0.6);
+    opacity: 1;
+    outline-color: transparent; }
+  .item--cart:active {
+    opacity: .3; }
+
+.modal__cart {
+  -ms-flex-align: center;
+      align-items: center;
+  background: #fff;
+  border-top: 1px solid #c7c7c7;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  height: 265px;
+  padding: 30px 30px 45px 30px;
+  position: absolute;
+  top: 1045px;
+  width: 260px; }
+
+.modal__overlay {
+  background: rgba(255, 255, 255, 0.9);
+  display: none;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%; }
+
+.cart__title {
+  font-size: 25px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 0px;
+  width: 145px; }
+
+.cart__size {
+  color: #444444;
+  position: relative;
+  top: 10px; }
+
+.cart__sizes {
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding: 10px 0 15px 0; }
+
+.btn__size {
+  background: #fff;
+  border: 2px solid #ececec;
+  color: #444444;
+  font-size: 17px;
+  font-weight: bold;
+  height: 48px;
+  line-height: 16px;
+  margin: 3px;
+  width: 78px; }
+  .btn__size:hover, .btn__size:focus {
+    border-color: #c7c7c7;
+    outline-color: transparent; }
+  .btn__size:active {
+    border-color: #62d1ba; }
+
+.size--active {
+  border-color: #62d1ba; }
+
+.btn--cart {
+  background: #63d1bb;
+  border-color: #63d1bb;
+  color: #fff; }
+  .btn--cart:hover, .btn--cart:focus {
+    background: #46c1ae;
+    border-color: #46c1ae;
+    outline-color: transparent; }

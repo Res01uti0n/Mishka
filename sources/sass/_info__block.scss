@@ -27,6 +27,7 @@
   &:focus {
     background-color: $btnHoverC;
     padding: 25px 180px 30px 30px;
+    outline-color: transparent;
   }
   &:active {
     background: $btnHoverC url(../img/interior.-active.png) no-repeat 245px center;
@@ -39,9 +40,16 @@
   &:hover,
   &:focus {
     background-color: $btnHoverC2;
+    outline-color: transparent;
   }
   &:active {
     background: $btnHoverC2 url(../img/toy-active.png) no-repeat 230px center;
     color: $whAct;
+  }
+}
+
+@media (min-width: 770px) {
+  .info__block {
+    background: url(../img/hero-desktop.jpg) no-repeat;
   }
 }

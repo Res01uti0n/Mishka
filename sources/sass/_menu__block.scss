@@ -1,5 +1,6 @@
 .menu__block {
   background: $wh;
+  display: none;
   left: 0;
   position: absolute;
   width: 320px;
@@ -26,12 +27,38 @@
   line-height: 24px;
   padding-left: 75px;
   text-decoration: none;
+  &:hover,
+  &:focus {
+    opacity: .6;
+    outline-color: transparent;
+  }
+  &:active {
+    opacity: .3;
+  }
 }
 
 .item--search {
   background: url(../img/search.png) no-repeat 30px center;
+  &:hover {
+    background: url(../img/search-hover.png) no-repeat 30px center;
+    color: $blAct;
+    opacity: 1;
+    outline-color: transparent;
+  }
+  &:active {
+    opacity: .3;
+  }
 }
 
 .item--cart {
   background: url(../img/cart.png) no-repeat 30px center;
+  &:hover {
+    background: url(../img/cart-hover.png) no-repeat 30px center;
+    color: $blAct;
+    opacity: 1;
+    outline-color: transparent;
+  }
+  &:active {
+    opacity: .3;
+  }
 }

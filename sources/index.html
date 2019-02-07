@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru" dir="ltr">
   <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <meta charset="utf-8">
@@ -9,7 +10,7 @@
   <body>
     <div class="container">
     <header class="header__block">
-      <a class="header__logo" href="#"><img src="img/logo.png" alt="Логотип" width="85" height="35"></a>
+      <a class="header__logo" href="#">Logo</a>
       <button class="btn--burger" type="button" name="button">Меню</button>
       <div class="menu__block">
         <ul class="menu__list">
@@ -86,8 +87,20 @@
         <li><a class="social__media media--fb" href="#">Facebook</a></li>
         <li><a class="social__media media--tw" href="#">Twitter</a></li>
       </ul>
-      <a class="footer__creator" href="#">Разработано <img src="img/htmlacademy.png" alt="htmlacademy" width="25" height="35"></a>
+      <a class="footer__creator" href="#">Разработано</a>
     </footer>
+    <div class="modal__overlay">
+    <section class="modal__cart">
+      <h3 class="cart__title">Добавить в корзину</h3>
+      <span class="cart__size">Выберите размер:</span>
+      <ul class="cart__sizes">
+        <li><button class="btn__size size--active" type="button" name="button">S</button></li>
+        <li><button class="btn__size" type="button" name="button">M</button></li>
+        <li><button class="btn__size" type="button" name="button">L</button></li>
+      </ul>
+      <button class="btn btn--cart" type="button" name="button">Добавить</button>
+    </section>
+    </div>
     </div>
   </body>
 </html>

@@ -33,7 +33,7 @@
 .tovat__info td {
   border-bottom: 1px solid $borderColor;
   padding-bottom: 5px;
-  padding-right: 30px;
+  padding-right: 25px;
   padding-top: 5px;
 }
 
@@ -65,6 +65,7 @@
   &:focus {
     background: $textColor;
     color: $wh;
+    outline-color: transparent;
   }
   &:active {
     color: $whAct;

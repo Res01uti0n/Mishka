@@ -33,6 +33,7 @@
   &:hover,
   &:focus {
     background: url(../img/insta.-hover.png) no-repeat center center;
+    outline-color: transparent;
   }
 }
 
@@ -53,16 +54,22 @@
 }
 
 .footer__creator {
-  align-items: center;
+  align-items: flex-start;
+  background: url(../img/htmlacademy.png) no-repeat 100% center;
   color: #000;
   display: flex;
   font-size: 19px;
   font-weight: bold;
   justify-content: space-between;
+  height: 35px;
   line-height: 18px;
-  padding-top: 10px;
+  padding-top: 15px;
   text-decoration: none;
   width: 180px;
+  &:hover,
+  &:focus {
+    background: url(../img/html-hover.png) no-repeat 100% center;
+  }
   &:active {
     opacity: .3;
   }

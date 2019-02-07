@@ -28,6 +28,9 @@ $anchorColor : #62d1ba;
 $borderColor2 : #e5e5e5;
 $bl : #000;
 $footerBack : #f1f1f1;
+$blAct : rgba(0, 0, 0, .6);
+$borderColor3: #c7c7c7;
+$overlayColor: rgba(255, 255, 255, .9);
 
 body {
   font-family: 'OpenSans', sans-serif;
@@ -43,6 +46,12 @@ body {
   width: 320px;
 }
 
+@media (min-width: 770px) {
+  .container {
+    width: 770px;
+  }
+}
+
 @import 'header__block';
 @import 'info__block';
 @import 'tovat__block';
@@ -51,3 +60,4 @@ body {
 @import 'contacts__block';
 @import 'footer__block';
 @import 'menu__block';
+@import 'modal__cart';

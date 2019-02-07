@@ -7,9 +7,19 @@
   padding: 20px 30px 20px 30px;
 }
 
+.header--menu {
+  padding: 20px 30px 300px 30px;
+}
+
 .header__logo {
+  background: url(../img/logo.png) no-repeat center center;
+  display: block;
+  color: transparent;
+  font-size: 1px;
+  height: 35px;
   right: 75px;
   position: relative;
+  width: 85px;
   &:hover,
   &:focus {
     opacity: .6;
@@ -34,5 +44,28 @@
   }
   &:active {
     opacity: .3;
+  }
+}
+
+.btn--close {
+  background: #fff url(../img/menu-close.png) no-repeat center center;
+  height: 22px;
+  width: 22px;
+}
+
+@media (min-width: 770px) {
+  .header__block {
+    justify-content: flex-start;
+    padding: 20px 50px 20px 50px;
+  }
+
+  .header__logo {
+    background: url(../img/logo-tablet.png) no-repeat center center;
+    height: 50px;
+    position: static;
+    width: 120px;
+  }
+  .btn--burger {
+    display: none;
   }
 }
