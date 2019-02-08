@@ -78,3 +78,31 @@
     opacity: .3;
   }
 }
+
+@media (min-width: 770px) {
+  .footer__block {
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 50px 20px 50px;
+  }
+
+  .footer__logo {
+    display: block;
+    &:hover,
+    &:focus {
+      opacity: .6;
+      outline-color: transparent;
+    }
+    &:active {
+      opacity: .3;
+    }
+  }
+
+  .footer__social {
+    border: none;
+    padding: 0;
+    margin-right: -65px;
+    width: 300px;
+  }
+}

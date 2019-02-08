@@ -19,6 +19,7 @@
   position: absolute;
   top: 0;
   width: 100%;
+  z-index: 100;
 }
 
 .cart__title {
@@ -74,5 +75,29 @@
     background: $btnHoverC2;
     border-color: $btnHoverC2;
     outline-color: transparent;
+  }
+}
+
+@media (min-width: 770px) {
+  .modal__cart {
+    height: 270px;
+    left: 100px;
+    padding: 0px 30px 45px 30px;
+    top: 1520px;
+    width: 500px;
+  }
+
+  .cart__title {
+    font-size: 30px;
+    line-height: 57px;
+    width: 355px;
+  }
+
+  .btn__size {
+    width: 108px;
+  }
+
+  .btn--cart {
+    width: 340px;
   }
 }

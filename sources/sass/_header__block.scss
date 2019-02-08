@@ -57,6 +57,8 @@
   .header__block {
     justify-content: flex-start;
     padding: 20px 50px 20px 50px;
+    position: relative;
+    z-index: 2;
   }
 
   .header__logo {
@@ -65,8 +67,21 @@
     position: static;
     width: 120px;
   }
-  
+
   .btn--burger {
     display: none;
+  }
+}
+
+@media (min-width: 1150px) {
+  .header__block {
+    justify-content: center;
+    padding: 10px 50px 5px 50px;
+  }
+
+  .header__logo {
+    background: url(../img/logo-desktop.png) no-repeat center center;
+    height: 75px;
+    width: 150px;
   }
 }

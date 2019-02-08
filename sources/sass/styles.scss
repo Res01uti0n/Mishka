@@ -52,6 +52,12 @@ body {
   }
 }
 
+@media (min-width: 1150px) {
+  .container {
+    width: 1150px;
+  }
+}
+
 @import 'header__block';
 @import 'info__block';
 @import 'tovat__block';
