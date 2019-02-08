@@ -35,10 +35,63 @@
   width: 200px;
 }
 
-.text--3 {
-  width: 160px;
-}
-
 .text--4 {
   width: 270px;
+}
+
+@media (min-width: 770px) {
+  .about__block {
+    background: url(../img/zigzag-about.jpg) no-repeat;
+    padding: 20px 50px 40px 50px;
+  }
+
+  .about__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .about__features {
+    align-items: baseline;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .about__item {
+    font-size: 20px;
+    line-height: 22px;
+    padding-top: 55px;
+    width: 50%;
+  }
+
+  .item__text {
+    width: 255px;
+  }
+
+  .item--3 {
+    order: 5;
+  }
+
+  .item--2 {
+    order: 3;
+  }
+
+  .item--5 {
+    order: 4
+  }
+
+  .item--6 {
+    order: 6;
+  }
+
+  .text--1 {
+    width: 220px;
+  }
+
+  .text--3 {
+    width: 270px;
+  }
+
+  .text--4 {
+    width: 320px;
+  }
 }

@@ -37,6 +37,10 @@
   padding-top: 5px;
 }
 
+.tovat__img {
+  width: 260px;
+}
+
 .tovat__price {
   color: $textColor;
   display: flex;
@@ -69,5 +73,68 @@
   }
   &:active {
     color: $whAct;
+  }
+}
+
+@media (min-width: 770px) {
+  .tovat__block {
+    background: url(../img/zigzag-desktop.png) no-repeat center 0;
+    margin-top: -30px;
+    padding: 0 50px 35px 50px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .tovat__title {
+    font-size: 43px;
+    line-height: 50px;
+    margin-top: -15px;
+  }
+
+  .tovat__type {
+    display: flex;
+    text-align: center;
+    width: 70px;
+  }
+
+  .tovat-title__wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0 35px 0;
+  }
+
+  .tovat-text__wrapper {
+    width: 290px;
+  }
+
+  .tovat__text {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .tovat__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .tovat__img {
+    padding-top: 25px;
+    width: 335px;
+  }
+
+  .tovat__price {
+    font-size: 20px;
+    margin-top: -5px;
+    padding: 25px 0 30px 0;
+  }
+
+  .wrapper--2 {
+    margin-top: -135px;
+  }
+
+  .btn {
+    width: 99%;
   }
 }

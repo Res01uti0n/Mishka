@@ -50,6 +50,38 @@
 
 @media (min-width: 770px) {
   .info__block {
+    align-items: center;
     background: url(../img/hero-desktop.jpg) no-repeat;
+    display: flex;
+    flex-direction: column;
+    padding: 155px 50px 5px 50px;
   }
+
+  .info__title {
+    font-size: 43px;
+    line-height: 50px;
+    width: 500px;
+  }
+
+  .mob-pag {
+    display: none;
+  }
+
+  .info__options {
+    display: flex;
+    padding: 310px 0 0 0;
+  }
+
+  .info__item {
+    background: $btnColor1 url(../img/interior.png) no-repeat 265px center;
+    padding: 30px 180px 30px 30px;
+    &:hover,
+    &:focus {
+      padding: 30px 180px 35px 30px;
+    }
+  }
+
+  .item--2type {
+    background: $btnColor2 url(../img/toy.png) no-repeat 220px center;
+   }
 }

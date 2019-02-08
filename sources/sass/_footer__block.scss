@@ -6,6 +6,10 @@
   padding: 0 30px 20px 30px;
 }
 
+.footer__logo {
+  display: none;
+}
+
 .footer__social {
   border-bottom: 1px solid $borderColor2;
   display: flex;

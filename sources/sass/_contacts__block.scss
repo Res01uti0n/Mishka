@@ -56,3 +56,46 @@
 .contact__map {
   padding-bottom: 35px;
 }
+
+@media (min-width: 770px) {
+  .contacts__block {
+    background: url(../img/flag.jpg) no-repeat 665px 60px,
+    url(../img/zigzag-about.jpg) no-repeat;
+    font-size: 17px;
+    padding-bottom: 60px;
+  }
+
+  .contacts__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 35px 50px 0 50px;
+  }
+
+  .contacts__title {
+    font-size: 43px;
+    line-height: 50px;
+    width: 100%;
+  }
+
+  .contacts__address {
+    bottom: 60px;
+  }
+
+  .address__wrapper {
+    padding-right: 35px;
+  }
+
+  .address__info {
+    width: 220px;
+  }
+
+  .contact__map {
+    padding: 15px 0 60px 0;
+  }
+
+  .btn--contacts {
+    background: #fff;
+    width: 226px;
+  }
+}
