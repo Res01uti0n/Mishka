@@ -144,23 +144,14 @@
 @media (min-width: 1150px) {
   .list__item {
     font-size: 17px;
+    height: 30px;
     width: 170px;
   }
 
   .item--search {
-    background: url(../img/search.png) no-repeat center center;
-    border-left: 1px solid $borderColor;
-    border-right: 1px solid $borderColor;
-    color: transparent;
-    display: block;
-    font-size: 1px;
-    padding: 0;
     height: 90px;
-    margin-left: 350px;
+    margin-left: 320px;
     width: 80px;
-    &:hover {
-      color: transparent;
-    }
   }
 
   .item--cart {
@@ -188,10 +179,17 @@
   .more__menu {
     display: flex;
     list-style: none;
-    padding-left: 7px;
+    padding-left: 35px;
   }
 
   .more__menu .list__item {
     font-size: 15px;
+    margin-left: -23px;
+    width: 160px;
+  }
+
+  .menu__info {
+    right: 50px;
+    bottom: 15px;
   }
 }

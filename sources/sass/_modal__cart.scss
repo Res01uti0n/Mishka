@@ -22,6 +22,10 @@
   z-index: 100;
 }
 
+.modal--show {
+  display: block;
+}
+
 .cart__title {
   font-size: 25px;
   text-transform: uppercase;
@@ -52,13 +56,13 @@
   line-height: 16px;
   margin: 3px;
   width: 78px;
-  &:hover,
-  &:focus {
+  &:hover {
     border-color: $borderColor3;
-    outline-color: transparent;
   }
+  &:focus,
   &:active {
     border-color: $anchorColor;
+    outline-color: transparent;
   }
 }
 
@@ -99,5 +103,14 @@
 
   .btn--cart {
     width: 340px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .modal__cart {
+    height: 300px;
+    left: 290px;
+    top: 1155px;
+    width: 510px;
   }
 }

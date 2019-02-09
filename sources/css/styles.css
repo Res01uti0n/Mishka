@@ -906,20 +906,12 @@ body {
 @media (min-width: 1150px) {
   .list__item {
     font-size: 17px;
+    height: 30px;
     width: 170px; }
   .item--search {
-    background: url(../img/search.png) no-repeat center center;
-    border-left: 1px solid #ececec;
-    border-right: 1px solid #ececec;
-    color: transparent;
-    display: block;
-    font-size: 1px;
-    padding: 0;
     height: 90px;
-    margin-left: 350px;
+    margin-left: 320px;
     width: 80px; }
-    .item--search:hover {
-      color: transparent; }
   .item--cart {
     font-size: 17px;
     padding-left: 70px;
@@ -940,9 +932,14 @@ body {
     display: -ms-flexbox;
     display: flex;
     list-style: none;
-    padding-left: 7px; }
+    padding-left: 35px; }
   .more__menu .list__item {
-    font-size: 15px; } }
+    font-size: 15px;
+    margin-left: -23px;
+    width: 160px; }
+  .menu__info {
+    right: 50px;
+    bottom: 15px; } }
 
 .modal__cart {
   -ms-flex-align: center;
@@ -968,6 +965,9 @@ body {
   top: 0;
   width: 100%;
   z-index: 100; }
+
+.modal--show {
+  display: block; }
 
 .cart__title {
   font-size: 25px;
@@ -997,11 +997,11 @@ body {
   line-height: 16px;
   margin: 3px;
   width: 78px; }
-  .btn__size:hover, .btn__size:focus {
-    border-color: #c7c7c7;
+  .btn__size:hover {
+    border-color: #c7c7c7; }
+  .btn__size:focus, .btn__size:active {
+    border-color: #62d1ba;
     outline-color: transparent; }
-  .btn__size:active {
-    border-color: #62d1ba; }
 
 .size--active {
   border-color: #62d1ba; }
@@ -1030,3 +1030,10 @@ body {
     width: 108px; }
   .btn--cart {
     width: 340px; } }
+
+@media (min-width: 1150px) {
+  .modal__cart {
+    height: 300px;
+    left: 290px;
+    top: 1155px;
+    width: 510px; } }
