@@ -67,6 +67,10 @@
   display: none;
 }
 
+.more__menu {
+  display: none;
+}
+
 @media (min-width: 770px) {
   .menu__block {
     background: transparent;
@@ -134,5 +138,60 @@
     position: absolute;
     right: 50px;
     bottom: 24px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .list__item {
+    font-size: 17px;
+    width: 170px;
+  }
+
+  .item--search {
+    background: url(../img/search.png) no-repeat center center;
+    border-left: 1px solid $borderColor;
+    border-right: 1px solid $borderColor;
+    color: transparent;
+    display: block;
+    font-size: 1px;
+    padding: 0;
+    height: 90px;
+    margin-left: 350px;
+    width: 80px;
+    &:hover {
+      color: transparent;
+    }
+  }
+
+  .item--cart {
+    font-size: 17px;
+    padding-left: 70px;
+    width: 205px;
+  }
+
+  .menu--1 {
+    order: 1;
+  }
+
+  .menu--2 {
+    order: 2;
+  }
+
+  .menu--3 {
+    order: 3;
+  }
+
+  .menu--4 {
+    order: 4;
+  }
+
+  .more__menu {
+    display: flex;
+    list-style: none;
+    padding-left: 7px;
+  }
+
+  .more__menu .list__item {
+    font-size: 15px;
   }
 }

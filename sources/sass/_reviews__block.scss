@@ -107,3 +107,26 @@
     flex-direction: column;
   }
 }
+
+@media (min-width: 1150px) {
+  .reviews__block {
+    background: url(../img/review.jpg) no-repeat 50px 0;
+    padding: 70px 100px 110px 225px;
+  }
+
+  .review__title {
+    bottom: 35px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .review__text {
+    font-size: 17px;
+    margin-top: -35px;
+    width: 755px;
+  }
+
+  .review__wrapper {
+    width: 875px;
+  }
+}

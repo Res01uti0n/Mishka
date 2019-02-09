@@ -46,6 +46,7 @@
   &:hover,
   &:focus {
     background: url(../img/fb-hover.png) no-repeat center center;
+    outline-color: transparent;
   }
 }
 
@@ -54,6 +55,7 @@
   &:hover,
   &:focus {
     background: url(../img/twitter-hover.png) no-repeat center center;
+    outline-color: transparent;
   }
 }
 
@@ -73,6 +75,7 @@
   &:hover,
   &:focus {
     background: url(../img/html-hover.png) no-repeat 100% center;
+    outline-color: transparent;
   }
   &:active {
     opacity: .3;

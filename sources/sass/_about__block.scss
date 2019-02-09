@@ -41,7 +41,10 @@
 
 @media (min-width: 770px) {
   .about__block {
+    align-items: center;
     background: url(../img/zigzag-about.jpg) no-repeat;
+    display: flex;
+    flex-direction: column;
     padding: 20px 50px 40px 50px;
   }
 
@@ -93,5 +96,24 @@
 
   .text--4 {
     width: 320px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .about__block {
+    background: url(../img/zigzag-desk.jpg) no-repeat center top;
+    padding: 50px 50px 80px 50px;
+  }
+
+  .about__title {
+    align-self: flex-start;
+    font-size: 53px;
+    line-height: 57px;
+    padding-left: 175px;
+  }
+
+  .about__features {
+    width: 710px;
+    justify-content: space-between;
   }
 }

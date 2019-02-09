@@ -8,6 +8,8 @@
     <title>Mishka</title>
   </head>
   <body>
+    <div class="header__wrapper"></div>
+    <div class="zigzag__box"></div>
     <div class="container">
     <header class="header__block">
       <a class="header__logo" href="#">logo</a>
@@ -18,6 +20,10 @@
           <li class="menu--2"><a class="list__item" href="#">Вязание на заказ</a></li>
           <li class="menu--3"><a class="list__item item--search" href="#">Поиск по сайту</a></li>
           <li class="menu--4"><a class="list__item item--cart" href="#">Корзина: пока пуста</a></li>
+        </ul>
+        <ul class="more__menu">
+          <li><a class="list__item" href="#">Новые поступления</a></li>
+          <li><a class="list__item" href="#">Распродажа</a></li>
         </ul>
         <span class="menu__info">Бесплатная доставка по России</span>
       </div>
@@ -51,6 +57,7 @@
             </table>
           </div>
           <picture>
+            <source media="(min-width:525px)" srcset="img/triple-desk.jpg">
             <source media="(min-width:335px)" srcset="img/triple-tablet.jpg">
             <img class="tovat__img" src="img/tovat.jpg" alt="Товар">
           </picture>
@@ -97,7 +104,7 @@
             <p class="address__info">г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br> д. 19/8, офис 101<p>
           </div>
         </div>
-        <img class="contact__map" src="img/map.jpg" alt="Карта" width="320" height="455">
+        <img class="contact__map" src="img/map.jpg" alt="Карта">
         <button class="btn btn--contacts" type="button" name="button">Напиши нам</button>
       </section>
     </main>

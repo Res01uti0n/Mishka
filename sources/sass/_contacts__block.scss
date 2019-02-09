@@ -99,3 +99,55 @@
     width: 226px;
   }
 }
+
+@media (min-width: 1150px) {
+  .contacts__block {
+    background: url(../img/flag.jpg) no-repeat 115px 130px,
+    url(../img/zigzag-desk.jpg) no-repeat center top;
+    flex-direction: row;
+    padding: 70px 50px 60px 50px;
+  }
+
+  .contacts__wrapper {
+    flex-direction: column;
+    margin-top: -125px;
+    padding: 0 50px 0 170px;
+    width: 300px;
+  }
+
+  .contacts__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .email__wrapper {
+    display: flex;
+    width: 280px;
+  }
+
+  .address__wrapper {
+    display: flex;
+    width: 300px;
+  }
+
+  .contacts__address {
+    bottom: 0;
+    top: 15px;
+  }
+
+  .address__info {
+    left: 5px;
+    position: relative;
+  }
+
+  .contact__map {
+    width: 525px;
+    height: 460px;
+  }
+
+  .btn--contacts {
+    bottom: 260px;
+    left: 220px;
+    position: absolute;
+  }
+}

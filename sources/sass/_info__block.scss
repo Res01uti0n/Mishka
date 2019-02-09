@@ -48,6 +48,10 @@
   }
 }
 
+.header__wrapper {
+  display: none;
+}
+
 @media (min-width: 770px) {
   .info__block {
     align-items: center;
@@ -77,11 +81,87 @@
     padding: 30px 180px 30px 30px;
     &:hover,
     &:focus {
+      background: $btnHoverC url(../img/interior.png) no-repeat 265px center;
       padding: 30px 180px 35px 30px;
+    }
+    &:active {
+      background: $btnHoverC url(../img/interior.-active.png) no-repeat 265px center;
     }
   }
 
   .item--2type {
     background: $btnColor2 url(../img/toy.png) no-repeat 220px center;
+    &:hover,
+    &:focus {
+      background: $btnHoverC2 url(../img/toy.png) no-repeat 220px center;
+    }
+    &:active {
+      background: $btnHoverC2 url(../img/toy-active.png) no-repeat 220px center;
+    }
    }
+}
+
+@media (min-width: 1150px) {
+  .info__block {
+    background: url(../img/hero-desk.jpg) no-repeat center center;
+    padding: 110px 50px 5px 50px;
+  }
+
+  .info__title {
+    font-size: 53px;
+    line-height: 57px;
+    width: 600px;
+  }
+
+  .info__options {
+    padding: 320px 0 0 0;
+    width: 1050px;
+    z-index: 1;
+  }
+
+  .info__item {
+    background: $btnColor1 url(../img/interior.png) no-repeat 450px center;
+    padding: 30px 375px 30px 35px;
+    width: 115px;
+    &:hover,
+    &:focus {
+      background: $btnHoverC url(../img/interior.png) no-repeat 450px center;
+      padding: 30px 375px 35px 35px;
+    }
+    &:active {
+      background: $btnHoverC url(../img/interior.-active.png) no-repeat 450px center;
+    }
+  }
+
+  .item--2type {
+    background: $btnColor2 url(../img/toy.png) no-repeat 430px center;
+    &:hover,
+    &:focus {
+      background: $btnHoverC2 url(../img/toy.png) no-repeat 430px center;
+    }
+    &:active {
+      background: $btnHoverC2 url(../img/toy-active.png) no-repeat 430px center;
+    }
+   }
+
+  .header__wrapper {
+    background: #f9f9f9;
+    border-top: 1px solid $borderColor;
+    display: block;
+    height: 745px;
+    position: absolute;
+    width: 100%;
+    top: 90px;
+   }
+
+  .zigzag__box {
+    background: url(../img/zigzag-desk.png) repeat-x center bottom;
+    display: block;
+    height: 35px;
+    position: absolute;
+    top: 815px;
+    width: 100%;
+    z-index: 20;
+  }
+
 }
