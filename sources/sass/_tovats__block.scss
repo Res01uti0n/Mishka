@@ -89,7 +89,9 @@
 }
 
 .video__block {
+  height: 160px;
   padding-bottom: 30px;
+  width: 250px;
 }
 
 .start__video {
@@ -128,6 +130,10 @@
 }
 
 @media (min-width: 770px) {
+  .tovats__block {
+    padding: 75px 50px 30px 50px;
+  }
+
   .img__card {
     height: 335px;
     width: 335px;
@@ -137,6 +143,9 @@
     align-items: flex-start;
     border-top: 1px solid $borderColor;
     flex-direction: row;
+    margin-bottom: 55px;
+    min-height: 335px;
+    width: 670px;
   }
 
   .card__title {
@@ -150,9 +159,120 @@
 
   .card__btn {
     font-size: 17px;
+    width: 270px;
   }
 
   .card__box {
-    padding-left: 25px;
+    padding-left: 30px;
   }
+
+  .picture__box {
+    display: flex;
+    flex-direction: column;
+    height: 335px;
+  }
+
+  .card__wrapper {
+    min-height: 260px;
+    padding-bottom: 0;
+    width: 100%;
+  }
+
+  .card--video {
+    align-items: center;
+    flex-direction: column;
+    padding-top: 0;
+  }
+
+  .video__block {
+    height: 455px;
+    order: 1;
+    padding-bottom: 0;
+    width: 670px;
+  }
+
+  .title--video {
+    align-self: flex-start;
+    margin: 40px 0 40px 10px;
+    order: 2;
+    padding-left: 90px;
+  }
+
+  .info--video {
+    order: 3;
+    padding-bottom: 20px;
+    width: 580px;
+  }
+
+  .btn--video {
+    order: 4;
+    width: 583px;
+  }
+
+  .start__video {
+    left: 285px;
+    top: 185px;
+    &:hover,
+    &:focus {
+      left: 275px;
+      top: 175px;
+    }
+    &:active {
+      left: 295px;
+      top: 195px;
+    }
+  }
+}
+
+@media (min-width: 1150px) {
+  .tovats__block {
+    padding: 120px 50px 30px 65px;
+  }
+
+  .tovat__card {
+    flex-direction: column;
+    width: 315px;
+  }
+
+  .img__card {
+    height: 460px;
+    width: 315px;
+  }
+
+  .card__wrapper {
+    min-height: 120px;
+    padding-top: 130px;
+  }
+
+  .tovats__box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .card--video {
+    flex-direction: column;
+    min-height: 419px;
+    padding-left: 680px;
+    width: 360px;
+  }
+
+  .video__block {
+    left: 0;
+    position: absolute;
+  }
+
+  .title--video {
+    background: url(../img/video.jpg) no-repeat 60px 10px;
+    padding: 60px 0 0 58px;
+    width: 155px;
+  }
+
+  .info--video {
+    width: 225px;
+  }
+
+  .btn--video {
+    width: 228px;
+  }
+
 }

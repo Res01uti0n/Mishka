@@ -23,3 +23,24 @@
     line-height: 50px;
   }
 }
+
+@media (min-width: 1150px) {
+  .catalog__title-block {
+    background: $footerBack url(../img/zigzag-desk.png) no-repeat center 222px;
+    min-height: 255px;
+  }
+
+  .catalog__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .catalog__box {
+    background: $footerBack url(../img/zigzag-desk.png) repeat-x center 222px;
+    border-top: 1px solid $borderColor;
+    height: 255px;
+    position: absolute;
+    top: 90px;
+    width: 100%;
+  }
+}
