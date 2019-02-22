@@ -1,9 +1,25 @@
 .catalog__title-block {
+  align-items: center;
   background: $footerBack;
   display: flex;
+  justify-content: center;
   min-height: 180px;
+  padding: 0;
+  width: 100%;
 }
 
 .catalog__title {
   font-size: 27px;
+}
+
+@media (min-width: 770px) {
+  .catalog__title-block {
+    background: $footerBack url(../img/zigzag-desktop.png) no-repeat center 206px;
+    min-height: 225px;
+  }
+
+  .catalog__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
 }

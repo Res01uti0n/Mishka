@@ -1,0 +1,158 @@
+.tovats__block {
+  padding: 30px 30px 30px 30px;
+}
+
+.tovat__card {
+  align-items: center;
+  border-bottom: 1px solid $borderColor;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  &:hover,
+  &:focus {
+    box-shadow: 0 6px 10px $shadowColor;
+    outline-color: transparent;
+  }
+  &:active {
+    box-shadow: 0 3px 5px $shadowColor;
+  }
+}
+
+.card__wrapper {
+  padding-bottom: 10px;
+}
+
+.card__anchor {
+  color: $bl;
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    opacity: .6;
+    outline-color: transparent;
+  }
+  &:active {
+    opacity: .3;
+  }
+}
+
+.card__title {
+  font-size: 17px;
+  line-height: 24px;
+  width: 190px;
+}
+
+.card__info {
+  color: $textColor;
+  font-size: 13px;
+  margin-top: -10px;
+}
+
+.card__btn {
+  background: $wh url(../img/cart.png) no-repeat 100% center;
+  border: none;
+  border-top: 1px solid $borderColor;
+  font-size: 15px;
+  font-weight: bold;
+  height: 75px;
+  line-height: 24px;
+  text-align: left;
+  width: 210px;
+  &:hover,
+  &:focus {
+    background: #fff url(../img/cart-hover.png) no-repeat 100% center;
+    outline-color: transparent;
+  }
+  &:active {
+    opacity: .3;
+  }
+}
+
+.card--video {
+  border-top: 1px solid $borderColor;
+  padding: 0 0 35px 0;
+  position: relative;
+}
+
+.title--video {
+  background: url(../img/video.jpg) no-repeat 35px center;
+  padding-left: 90px;
+  width: 160px;
+}
+
+.btn--video {
+  width: 190px;
+}
+
+.info--video {
+  padding-bottom: 10px;
+  width: 180px;
+}
+
+.video__block {
+  padding-bottom: 30px;
+}
+
+.start__video {
+  background: url(../img/play.png) no-repeat center center;
+  background-size: cover;
+  border: none;
+  color: transparent;
+  position: absolute;
+  height: 75px;
+  top: 125px;
+  width: 100px;
+  &:hover,
+  &:focus {
+    height: 90px;
+    outline-color: transparent;
+    top: 115px;
+    width: 120px;
+  }
+  &:active {
+    height: 60px;
+    opacity: .6;
+    top: 125px;
+    width: 80px;
+  }
+}
+
+.img__card {
+  height: 150px;
+  width: 260px;
+}
+
+.card__box {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 770px) {
+  .img__card {
+    height: 335px;
+    width: 335px;
+  }
+
+  .tovat__card {
+    align-items: flex-start;
+    border-top: 1px solid $borderColor;
+    flex-direction: row;
+  }
+
+  .card__title {
+    font-size: 20px;
+    width: 240px;
+  }
+
+  .card__info {
+    font-size: 15px;
+  }
+
+  .card__btn {
+    font-size: 17px;
+  }
+
+  .card__box {
+    padding-left: 25px;
+  }
+}

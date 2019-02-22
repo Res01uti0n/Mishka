@@ -28,38 +28,50 @@
         <span class="menu__info">Бесплатная доставка по России</span>
       </div>
     </header>
-    <menu>
+    <main>
       <section class="catalog__title-block">
         <h1 class="catalog__title">Каталог товаров</h1>
       </section>
-      <section>
-        <h2>Товары</h2>
-        <div class="">
-          <img src="img/photo-1-mobile.jpg" alt="Зайчик-попрыгайчик" width="260" height="195">
-          <h3>Зайчик-попрыгайчик</h3>
-          <p>Рост 30 см, вес 200 г</p>
-          <button type="button" name="button">1200 руб.</button>
+      <section class="tovats__block">
+        <h2 class="title--hidden">Товары</h2>
+        <div class="tovat__card">
+          <picture>
+            <source media="(min-width:335px)" srcset="img/photo-1-tablet.jpg">
+            <img class="img__card" src="img/photo-1-mobile.jpg" alt="Зайчик-попрыгайчик">
+          </picture>
+          <div class="card__box">
+            <div class="card__wrapper">
+              <h3 class="card__title"><a href="#" class="card__anchor">Зайчик-попрыгайчик</a></h3>
+              <p class="card__info">Рост 30 см, вес 200 г</p>
+            </div>
+            <button class="card__btn" type="button" name="button">1200 руб.</button>
+          </div>
         </div>
-        <div class="">
+        <div class="tovat__card">
           <img src="img/photo-2-mobile.jpg" alt="Корзина для белья" width="260" height="195">
-          <h3>Корзина для белья</h3>
-          <p>Диаметр 15 см, высота 10 см</p>
-          <button type="button" name="button">690 руб.</button>
+          <div class="card__wrapper">
+            <h3 class="card__title"><a href="#" class="card__anchor">Корзина для белья</a></h3>
+            <p class="card__info">Диаметр 15 см, высота 10 см</p>
+          </div>
+          <button class="card__btn" type="button" name="button">690 руб.</button>
         </div>
-        <div class="">
+        <div class="tovat__card">
           <img src="img/photo-3-mobile.jpg" alt="Большая корзина для игрушек" width="260" height="195">
-          <h3>Большая корзина для игрушек</h3>
-          <p>Диаметр 30 см, высота 30 см</p>
-          <button type="button" name="button">1500 руб.</button>
+          <div class="card__wrapper">
+            <h3 class="card__title"><a href="#" class="card__anchor">Большая корзина для игрушек</a></h3>
+            <p class="card__info">Диаметр 30 см, высота 30 см</p>
+          </div>
+          <button class="card__btn" type="button" name="button">1500 руб.</button>
         </div>
-        <div class="">
-          <h3>Процесс производства</h3>
-          <video src="videofile.ogg" autoplay poster="posterimage.jpg"></video>
-          <p>По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-          <a href="#">Сделать заказ</a>
+        <div class="tovat__card card--video">
+          <h3 class="card__title title--video">Процесс производства</h3>
+          <video class="video__block" src="#" poster="img/video-mobile.jpg" width="260" height="150"></video>
+          <p class="card__info info--video">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          <a class="btn btn--video" href="#">Сделать заказ</a>
+          <button class="start__video" type="button" name="button">Начать</button>
         </div>
       </section>
-    </menu>
+    </main>
     <footer class="footer__block">
       <a href="#"><img class="footer__logo" src="img/logo-footer.png" alt="Логотип" width="105" height="35"></a>
       <ul class="footer__social">
