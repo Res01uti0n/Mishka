@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="utf-8">
+    <title>Mishka</title>
+  </head>
+  <body>
+    <div class="header__wrapper"></div>
+    <div class="zigzag__box"></div>
+    <div class="container">
+    <header class="header__block">
+      <a class="header__logo" href="#">logo</a>
+      <button class="btn--burger" type="button" name="button">Меню</button>
+      <div class="menu__block">
+        <ul class="menu__list">
+          <li class="menu--1"><a class="list__item" href="#">Каталог товаров</a></li>
+          <li class="menu--2"><a class="list__item" href="#">Вязание на заказ</a></li>
+          <li class="menu--3"><a class="list__item item--search" href="#">Поиск по сайту</a></li>
+          <li class="menu--4"><a class="list__item item--cart" href="#">Корзина: пока пуста</a></li>
+        </ul>
+        <ul class="more__menu">
+          <li><a class="list__item" href="#">Новые поступления</a></li>
+          <li><a class="list__item" href="#">Распродажа</a></li>
+        </ul>
+        <span class="menu__info">Бесплатная доставка по России</span>
+      </div>
+    </header>
+    <menu>
+      <section class="catalog__title-block">
+        <h1 class="catalog__title">Каталог товаров</h1>
+      </section>
+      <section>
+        <h2>Товары</h2>
+        <div class="">
+          <img src="img/photo-1-mobile.jpg" alt="Зайчик-попрыгайчик" width="260" height="195">
+          <h3>Зайчик-попрыгайчик</h3>
+          <p>Рост 30 см, вес 200 г</p>
+          <button type="button" name="button">1200 руб.</button>
+        </div>
+        <div class="">
+          <img src="img/photo-2-mobile.jpg" alt="Корзина для белья" width="260" height="195">
+          <h3>Корзина для белья</h3>
+          <p>Диаметр 15 см, высота 10 см</p>
+          <button type="button" name="button">690 руб.</button>
+        </div>
+        <div class="">
+          <img src="img/photo-3-mobile.jpg" alt="Большая корзина для игрушек" width="260" height="195">
+          <h3>Большая корзина для игрушек</h3>
+          <p>Диаметр 30 см, высота 30 см</p>
+          <button type="button" name="button">1500 руб.</button>
+        </div>
+        <div class="">
+          <h3>Процесс производства</h3>
+          <video src="videofile.ogg" autoplay poster="posterimage.jpg"></video>
+          <p>По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          <a href="#">Сделать заказ</a>
+        </div>
+      </section>
+    </menu>
+    <footer class="footer__block">
+      <a href="#"><img class="footer__logo" src="img/logo-footer.png" alt="Логотип" width="105" height="35"></a>
+      <ul class="footer__social">
+        <li><a class="social__media media--inst" href="#">Instagram</a></li>
+        <li><a class="social__media media--fb" href="#">Facebook</a></li>
+        <li><a class="social__media media--tw" href="#">Twitter</a></li>
+      </ul>
+      <a class="footer__creator" href="#">Разработано</a>
+    </footer>
+    <div class="modal__overlay">
+    <section class="modal__cart">
+      <h3 class="cart__title">Добавить в корзину</h3>
+      <span class="cart__size">Выберите размер:</span>
+      <ul class="cart__sizes">
+        <li><button class="btn__size size--s size--active" type="button" name="button">S</button></li>
+        <li><button class="btn__size size--m" type="button" name="button">M</button></li>
+        <li><button class="btn__size size--l" type="button" name="button">L</button></li>
+      </ul>
+      <button class="btn btn--cart" type="button" name="button">Добавить</button>
+    </section>
+    </div>
+    </div>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
