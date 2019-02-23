@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="utf-8">
+    <title>Mishka</title>
+  </head>
+  <body>
+    <div class="catalog__box"></div>
+    <div class="container">
+    <header class="header__block">
+      <a class="header__logo" href="#">logo</a>
+      <button class="btn--burger" type="button" name="button">Меню</button>
+      <div class="menu__block">
+        <ul class="menu__list">
+          <li class="menu--1"><a class="list__item" href="#">Каталог товаров</a></li>
+          <li class="menu--2"><a class="list__item" href="#">Вязание на заказ</a></li>
+          <li class="menu--3"><a class="list__item item--search" href="#">Поиск по сайту</a></li>
+          <li class="menu--4"><a class="list__item item--cart" href="#">Корзина: пока пуста</a></li>
+        </ul>
+        <ul class="more__menu">
+          <li><a class="list__item" href="#">Новые поступления</a></li>
+          <li><a class="list__item" href="#">Распродажа</a></li>
+        </ul>
+        <span class="menu__info">Бесплатная доставка по России</span>
+      </div>
+    </header>
+    <main>
+      <section class="catalog__title-block">
+        <h1 class="catalog__title">Каталог товаров</h1>
+      </section>
+      <section class="form__block">
+        <p class="form__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <form class="" action="index.html" method="post">
+          <fieldset class="form__field">
+            <legend class="form__title">Тип</legend>
+            <input type="radio" name="" value="">
+            <label for="">Аксессуар для интерьера</label>
+            <input type="radio" name="" value="">
+            <label for="">Детская игрушка</label>
+          </fieldset>
+          <fieldset>
+            <legend>Цвет</legend>
+            <input type="checkbox" name="" value="">
+            <label for="">Белый</label>
+            <input type="checkbox" name="" value="">
+            <label for="">Серый</label>
+            <input type="checkbox" name="" value="">
+            <label for="">«Тиффани»</label>
+            <input type="checkbox" name="" value="">
+            <label for="">Черный</label>
+            <input type="checkbox" name="" value="">
+            <label for="">Розовый</label>
+            <input type="checkbox" name="" value="">
+            <label for="">Оранжевый</label>
+          </fieldset>
+          <fieldset>
+            <legend>ФИО</legend>
+            <label for="">Имя</label>
+            <input type="text" name="" value="">
+            <label for="">Фамилия</label>
+            <input type="text" name="" value="">
+            <label for="">Отчество</label>
+            <input type="text" name="" value="">
+          </fieldset>
+          <fieldset>
+            <legend>Тел</legend>
+            <label for="">Телефон</label>
+            <input type="number" name="" value="">
+          </fieldset>
+          <fieldset>
+            <legend>E-mail</legend>
+            <label for="">E-mail</label>
+            <input type="email" name="" value="">
+          </fieldset>
+          <fieldset>
+            <legend>Доп</legend>
+            <label for="">Текст</label>
+            <textarea name="name" rows="8" cols="80"></textarea>
+            <span>*Поля обязательны для заполнения</span>
+            <button type="button" name="button">Отправит заказ</button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <footer class="footer__block">
+      <a href="#"><img class="footer__logo" src="img/logo-footer.png" alt="Логотип" width="105" height="35"></a>
+      <ul class="footer__social">
+        <li><a class="social__media media--inst" href="#">Instagram</a></li>
+        <li><a class="social__media media--fb" href="#">Facebook</a></li>
+        <li><a class="social__media media--tw" href="#">Twitter</a></li>
+      </ul>
+      <a class="footer__creator" href="#">Разработано</a>
+    </footer>
+    <div class="modal__overlay">
+    <section class="modal__cart">
+      <h3 class="cart__title">Добавить в корзину</h3>
+      <span class="cart__size">Выберите размер:</span>
+      <ul class="cart__sizes">
+        <li><button class="btn__size size--s size--active" type="button" name="button">S</button></li>
+        <li><button class="btn__size size--m" type="button" name="button">M</button></li>
+        <li><button class="btn__size size--l" type="button" name="button">L</button></li>
+      </ul>
+      <button class="btn btn--cart" type="button" name="button">Добавить</button>
+    </section>
+    </div>
+    </div>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

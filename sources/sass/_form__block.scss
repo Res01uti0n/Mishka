@@ -1,0 +1,23 @@
+.form__block {
+  padding: 10px 30px 20px 30px;
+}
+
+.form__text {
+  color: $textColor;
+  font-size: 13px;
+  line-height: 24px;
+  width: 240px;
+}
+
+.form__field {
+  border: none;
+  border-top: 1px solid $btnColor1;
+}
+
+.form__title {
+  color: $btnColor1;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 16px;
+  text-transform: uppercase;
+}

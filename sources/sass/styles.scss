@@ -53,7 +53,7 @@ body {
   position: absolute;
 }
 
-@media (min-width: 770px) {
+/*@media (min-width: 770px) {
   .container {
     width: 770px;
   }
@@ -63,7 +63,7 @@ body {
   .container {
     width: 1150px;
   }
-}
+}*/
 
 @import 'header__block';
 @import 'info__block';
@@ -76,3 +76,4 @@ body {
 @import 'modal__cart';
 @import 'catalog__title-block';
 @import 'tovats__block';
+@import 'form__block';
