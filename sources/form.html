@@ -48,30 +48,31 @@
           <fieldset class="form__field color__block">
             <legend class="form__title">Цвет</legend>
             <div class="colors__wrapper">
-            <div class="">
-              <input type="checkbox" id="white" name="white" value="white" checked>
-              <label class="form__label" for="white">Белый</label>
-            </div>
-            <div class="">
-              <input type="checkbox" id="grey" name="grey" value="grey">
-              <label class="form__label" for="grey">Серый</label>
-            </div>
-            <div class="">
-              <input type="checkbox" id="tiffany" name="tiffany" value="tiffany">
-              <label class="form__label" for="tiffany">«Тиффани»</label>
-            </div>
-            <div class="">
-              <input type="checkbox" id="black" name="black" value="black">
-              <label class="form__label" for="black">Черный</label>
-            </div>
-            <div class="">
-              <input type="checkbox" id="pink" name="pink" value="pink">
-              <label class="form__label" for="pink">Розовый</label>
-            </div>
-            <div class="">
-              <input type="checkbox" id="orange" name="orange" value="orange">
-              <label class="form__label" for="orange">Оранжевый</label>
-            </div>
+              <div class="color__wrapper">
+                <input type="checkbox" id="white" name="white" value="white" checked>
+                <label class="form__label" for="white">Белый</label>
+              </div>
+              <div class="color__wrapper">
+                <input type="checkbox" id="grey" name="grey" value="grey">
+                <label class="form__label" for="grey">Серый</label>
+              </div>
+              <div class="color__wrapper">
+                <input type="checkbox" id="tiffany" name="tiffany" value="tiffany">
+                <label class="form__label" for="tiffany">«Тиффани»</label>
+              </div>
+              <div class="color__wrapper">
+                <input type="checkbox" id="black" name="black" value="black">
+                <label class="form__label" for="black">Черный</label>
+              </div>
+              <div class="color__wrapper">
+                <input type="checkbox" id="pink" name="pink" value="pink">
+                <label class="form__label" for="pink">Розовый</label>
+              </div>
+              <div class="color__wrapper">
+                <input type="checkbox" id="orange" name="orange" value="orange">
+                <label class="form__label" for="orange">Оранжевый</label>
+              </div>
+              <div class="block--fon"></div>
             </div>
           </fieldset>
           <fieldset class="form__field info__field">
@@ -89,18 +90,20 @@
               <input type="text" id="thirdname" name="thirdname" placeholder="Отчество, если желаете">
             </div>
           </fieldset>
-          <fieldset class="form__field contact__field">
+          <fieldset class="form__field contact__field phone__block">
             <legend class="form__title">Тел</legend>
             <div class="form__item">
               <label class="title--hidden" for="phone">Телефон:</label>
               <input class="input__phone" id="phone" type="text" name="phone" placeholder="+7 ХХХ ХХ ХХ*">
+              <div class="block--fon"></div>
             </div>
           </fieldset>
-          <fieldset class="form__field contact__field">
+          <fieldset class="form__field contact__field email__block">
             <legend class="form__title">E-mail</legend>
             <div class="form__item">
               <label class="title--hidden" for="email">E-mail</label>
               <input class="input__email" type="email" id="email" name="email" placeholder="Ваш Email*">
+              <div class="block--fon"></div>
             </div>
           </fieldset>
           <fieldset class="form__field text__field">
@@ -108,8 +111,11 @@
             <div class="form__item">
               <label class="title--hidden" for="text">Текст</label>
               <textarea class="text__box" id="text" name="name" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-              <span class="important__text">*Поля обязательны для заполнения</span>
-              <button class="btn btn--form" type="button" name="button">Отправить заказ</button>
+              <div class="text__field--wrapper">
+                <span class="important__text">*Поля обязательны для заполнения</span>
+                <button class="btn btn--form" type="button" name="button">Отправить заказ</button>
+              </div>
+
             </div>
           </fieldset>
         </form>
