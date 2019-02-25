@@ -419,3 +419,88 @@
   }
 
 }
+
+@media (min-width: 1150px) {
+  .form__block {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form__text {
+    align-self: center;
+    width: 680px;
+  }
+
+  .form__field {
+    padding: 40px 0 20px 200px;
+    max-width: 100%;
+  }
+
+  .form__title {
+    left: 65px;
+  }
+
+  .colors__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 45px 0 10px 0;
+    width: 870px;
+  }
+
+  .color__wrapper {
+    width: 275px;
+  }
+
+  .color__block--wrapper,
+  .contact__field--wrapper {
+    background: $footerBack;
+    height: 275px;
+    position: absolute;
+    top: 710px;
+    width: 100%;
+  }
+
+  .info__field .form__item,
+  .contact__field .form__item {
+    align-items: baseline;
+    display: flex;
+    width: 700px;
+  }
+
+  .info__field .form__title {
+    top: 55px;
+  }
+
+  .contact__field--wrapper {
+    top: 1268px;
+    height: 258px;
+  }
+
+  .phone__block {
+    padding-top: 60px;
+  }
+
+  .email__block {
+    margin-top: -45px;
+    padding-bottom: 35px;
+  }
+
+  .email__block .form__title {
+    top: 55px;
+  }
+
+  .text__box {
+    height: 108px;
+    padding: 15px 65px 15px 15px;
+    width: 610px;
+  }
+
+  .text__field--wrapper {
+    align-items: baseline;
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0 0 0;
+    width: 700px;
+  }
+
+}
