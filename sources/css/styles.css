@@ -1,14 +1,23 @@
 @font-face {
-  font-family: 'OpenSans';
-  src: url(../fonts/OpenSans-Bold-webfont.woff) format(woff), url(../fonts/OpenSans-Bold-webfont.ttf) format(truetype), url(../fonts/OpenSans-Bold-webfont.woff2) format(woff2);
-  font-weight: bold;
-  font-style: normal; }
+  font-family: "OpenSans";
+  src: url("../fonts/Open-Sans.woff2") format("woff2"), url("../fonts/Open-Sans.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; }
 
 @font-face {
-  font-family: 'OpenSans';
-  src: url(../fonts/OpenSans-Regular-webfont.woff) format(woff), url(../fonts/OpenSans-Regular-webfont.ttf) format(truetype), url(../fonts/OpenSans-Regular-webfont.woff2) format(woff2);
-  font-weight: normal;
-  font-style: normal; }
+  font-family: "OpenSans";
+  src: url("../fonts/Open-Sans-Light.woff2") format("woff2"), url("../fonts/Open-Sans-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/Open-Sans-Bold.woff2") format("woff2"), url("../fonts/Open-Sans-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
 
 body {
   font-family: 'OpenSans', sans-serif;
@@ -192,7 +201,7 @@ body {
   .info__title {
     font-size: 53px;
     line-height: 57px;
-    width: 600px; }
+    width: 700px; }
   .info__options {
     padding: 320px 0 0 0;
     width: 1050px;
@@ -358,7 +367,7 @@ body {
   .tovat__title {
     font-size: 53px;
     line-height: 57px;
-    padding-left: 70px;
+    padding-left: 55px;
     -ms-flex-order: 1;
         order: 1; }
   .tovat-title__wrapper {
@@ -371,7 +380,7 @@ body {
     margin-top: -170px;
     width: 525px; }
   .tovat-text__wrapper {
-    padding-left: 185px;
+    padding-left: 175px;
     width: 290px; }
   .tovat__type {
     padding-left: 45px; }
@@ -425,6 +434,8 @@ body {
         flex-direction: column;
     padding: 20px 50px 40px 50px; }
   .about__title {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
     font-size: 43px;
     line-height: 50px; }
   .about__features {
@@ -455,6 +466,8 @@ body {
         order: 6; }
   .text--1 {
     width: 220px; }
+  .text--2 {
+    width: 215px; }
   .text--3 {
     width: 270px; }
   .text--4 {
@@ -469,7 +482,7 @@ body {
         align-self: flex-start;
     font-size: 53px;
     line-height: 57px;
-    padding-left: 175px; }
+    padding-left: 165px; }
   .about__features {
     width: 710px;
     -ms-flex-pack: justify;
@@ -483,7 +496,7 @@ body {
 
 .review__text {
   color: #444444;
-  width: 250px; }
+  width: 260px; }
 
 .review__author {
   font-size: 17px; }
@@ -565,13 +578,13 @@ body {
     background: url(../img/review.jpg) no-repeat 50px 0;
     padding: 70px 100px 110px 225px; }
   .review__title {
-    bottom: 35px;
+    bottom: 37px;
     font-size: 53px;
     line-height: 57px; }
   .review__text {
     font-size: 17px;
     margin-top: -35px;
-    width: 755px; }
+    width: 770px; }
   .review__wrapper {
     width: 875px; } }
 
@@ -593,17 +606,22 @@ body {
   color: #444444;
   position: relative; }
 
+.email__title {
+  position: relative;
+  top: 30px; }
+
 .e-mail__anchor {
   color: #444444;
   text-decoration: none;
-  padding-left: 30px; }
+  margin-left: 80px;
+  position: relative; }
   .e-mail__anchor::before {
     background: #62d1ba;
     content: "";
     height: 1px;
     position: absolute;
     top: 27px;
-    width: 170px; }
+    width: 100%; }
   .e-mail__anchor:hover, .e-mail__anchor:focus {
     color: #46c1ae;
     outline-color: transparent; }
@@ -616,8 +634,8 @@ body {
 
 .address__info {
   display: inline-block;
-  padding-left: 30px;
-  width: 135px; }
+  margin-left: 30px;
+  width: 150px; }
 
 .contacts__wrapper {
   padding: 35px 30px 0 30px; }
@@ -644,10 +662,15 @@ body {
     width: 100%; }
   .contacts__address {
     bottom: 60px; }
+  .e-mail__anchor {
+    margin-left: 20px; }
+  .email__title {
+    position: relative;
+    top: 0; }
   .address__wrapper {
-    padding-right: 35px; }
+    padding-right: 20px; }
   .address__info {
-    width: 220px; }
+    width: 230px; }
   .contact__map {
     padding: 15px 0 60px 0; }
   .btn--contacts {
@@ -671,7 +694,10 @@ body {
     width: 300px; }
   .contacts__title {
     font-size: 53px;
-    line-height: 57px; }
+    line-height: 57px;
+    margin-bottom: 0; }
+  .e-mail__anchor {
+    margin-left: 85px; }
   .email__wrapper {
     display: -ms-flexbox;
     display: flex;
@@ -679,13 +705,15 @@ body {
   .address__wrapper {
     display: -ms-flexbox;
     display: flex;
-    width: 300px; }
+    width: 310px; }
   .contacts__address {
     bottom: 0;
     top: 15px; }
   .address__info {
     left: 5px;
     position: relative; }
+  .email__title {
+    top: 30px; }
   .contact__map {
     width: 525px;
     height: 460px; }
@@ -891,7 +919,7 @@ body {
     font-size: 15px;
     height: 75px;
     padding-left: 50px;
-    width: 130px; }
+    width: 137px; }
   .menu--1 {
     -ms-flex-order: 3;
         order: 3; }
@@ -959,7 +987,7 @@ body {
     padding-left: 35px; }
   .more__menu .list__item {
     font-size: 15px;
-    margin-left: -23px;
+    margin-left: -24px;
     width: 160px; }
   .menu__info {
     right: 50px;

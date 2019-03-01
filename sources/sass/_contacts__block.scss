@@ -16,17 +16,23 @@
   position: relative;
 }
 
+.email__title {
+  position: relative;
+  top: 30px;
+}
+
 .e-mail__anchor {
   color: $textColor;
   text-decoration: none;
-  padding-left: 30px;
+  margin-left: 80px;
+  position: relative;
   &::before {
     background: $anchorColor;
     content: "";
     height: 1px;
     position: absolute;
     top: 27px;
-    width: 170px;
+    width: 100%;
   }
   &:hover,
   &:focus {
@@ -45,8 +51,8 @@
 
 .address__info {
   display: inline-block;
-  padding-left: 30px;
-  width: 135px;
+  margin-left: 30px;
+  width: 150px;
 }
 
 .contacts__wrapper {
@@ -82,12 +88,21 @@
     bottom: 60px;
   }
 
+  .e-mail__anchor {
+    margin-left: 20px;
+  }
+
+  .email__title {
+    position: relative;
+    top: 0;
+  }
+
   .address__wrapper {
-    padding-right: 35px;
+    padding-right: 20px;
   }
 
   .address__info {
-    width: 220px;
+    width: 230px;
   }
 
   .contact__map {
@@ -123,6 +138,11 @@
   .contacts__title {
     font-size: 53px;
     line-height: 57px;
+    margin-bottom: 0;
+  }
+
+  .e-mail__anchor {
+    margin-left: 85px;
   }
 
   .email__wrapper {
@@ -132,7 +152,7 @@
 
   .address__wrapper {
     display: flex;
-    width: 300px;
+    width: 310px;
   }
 
   .contacts__address {
@@ -143,6 +163,10 @@
   .address__info {
     left: 5px;
     position: relative;
+  }
+
+  .email__title {
+    top: 30px;
   }
 
   .contact__map {
