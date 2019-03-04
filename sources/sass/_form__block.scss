@@ -7,7 +7,7 @@
   font-size: 13px;
   line-height: 24px;
   padding-bottom: 10px;
-  width: 240px;
+  width: 245px;
 }
 
 .form__field {
@@ -29,7 +29,7 @@
 
 .form__item {
   padding: 0px 0 0 55px;
-  width: 150px;
+  width: 155px;
 }
 
 .form__label {
@@ -199,6 +199,10 @@
 
 .input__email {
   background: url(../img/mail.png) no-repeat 95% center;
+}
+
+.text__field .form__item {
+  width: 250px;
 }
 
 .text__field {
