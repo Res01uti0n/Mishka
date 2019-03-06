@@ -23,9 +23,10 @@
 
 .e-mail__anchor {
   color: $textColor;
-  text-decoration: none;
-  margin-left: 80px;
+  left: 28px;
   position: relative;
+  top: 31px;
+  text-decoration: none;
   &::before {
     background: $anchorColor;
     content: "";
@@ -89,7 +90,7 @@
   }
 
   .e-mail__anchor {
-    margin-left: 20px;
+    top: 0px;
   }
 
   .email__title {
@@ -142,7 +143,8 @@
   }
 
   .e-mail__anchor {
-    margin-left: 85px;
+    left: 30px;
+    top: 30px;
   }
 
   .email__wrapper {

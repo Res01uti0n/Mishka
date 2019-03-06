@@ -612,9 +612,10 @@ body {
 
 .e-mail__anchor {
   color: #444444;
-  text-decoration: none;
-  margin-left: 80px;
-  position: relative; }
+  left: 28px;
+  position: relative;
+  top: 31px;
+  text-decoration: none; }
   .e-mail__anchor::before {
     background: #62d1ba;
     content: "";
@@ -663,7 +664,7 @@ body {
   .contacts__address {
     bottom: 60px; }
   .e-mail__anchor {
-    margin-left: 20px; }
+    top: 0px; }
   .email__title {
     position: relative;
     top: 0; }
@@ -697,7 +698,8 @@ body {
     line-height: 57px;
     margin-bottom: 0; }
   .e-mail__anchor {
-    margin-left: 85px; }
+    left: 30px;
+    top: 30px; }
   .email__wrapper {
     display: -ms-flexbox;
     display: flex;
